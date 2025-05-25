@@ -1,7 +1,7 @@
 -- Note this is like start of development so everything is like really REALLY in beta so i dont really recommend using it !
 
 repeat task.wait() until game:IsLoaded()
-local ui_repo = "https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/"
+local ui_repo = "https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/refs/heads/main/Library.lua"
 
 local function include(module)   
     return loadstring(game:HttpGet("https://raw.githubusercontent.com/penguin-cmyk/legion/refs/heads/main/utils/"..module..".lua"))()
