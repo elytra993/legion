@@ -248,7 +248,7 @@ check_folder("Legion")
 check_folder("Legion/Assets")
 
 
-local asset_url = "https://raw.githubusercontent.com/penguin-cmyk/legion/refs/heads/main/Assets"
+local asset_url = "https://raw.githubusercontent.com/elytra993/legion/main/Assets"
 local assets = { "user-cog.png",
                  "square-mouse-pointer.png",
                  "help.png",
@@ -280,8 +280,8 @@ local function getobject(path)
     return game:GetObjects(getcustomasset(`Legion/Assets/{path}.rbxm`))[1]
 end 
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/penguin-cmyk/legion/refs/heads/main/utils/uiiiiiiii.luau"))()
-local StompModule, DhLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/penguin-cmyk/legion/refs/heads/main/utils/stomp_effects.luau"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/elytra993/legion/refs/heads/main/utils/uiiiiiiii.luau"))()
+local StompModule, DhLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/elytra993/legion/refs/heads/main/utils/stomp_effects.luau"))()
 local Flags;
 local Connections: { [string]: RBXScriptConnection } = {}
 
@@ -1441,21 +1441,21 @@ do
     useful_tool:Button({
         Name = "Infinite Yield",
         Callback = function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source"))()
+            print("It was Infinite Yield")
         end
     })
 
     useful_tool:Button({
         Name = "Dex Explorer",
         Callback = function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+            print("It was Dex Explorer")
         end
     })
 
     useful_tool:Button({
         Name = "Simple Spy",
         Callback = function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/SimpleSpyV3/main.lua"))()
+            print("It was Simple Spy")
         end
     })
 
@@ -1466,7 +1466,7 @@ do
             local branch = "revision"
 
             local function webImport(file)
-                return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
+                return print("It was idk bro but I need ur safty")
             end
 
             webImport("init")
@@ -2356,6 +2356,6 @@ do
 
     end))
 end
-local bot = loadstring(game:HttpGet("https://raw.githubusercontent.com/penguin-cmyk/discord-bot-luau/refs/heads/main/discordbot/init.lua"))()
+local bot = loadstring(game:HttpGet("https://raw.githubusercontent.com/elytra993/bot/refs/heads/main/discordbot/init.lua"))()
 getgenv().modules = modules
 getgenv().bot = bot
