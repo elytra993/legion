@@ -3,7 +3,7 @@
 ]]
 
 
-local legion_logo = "https://raw.githubusercontent.com/penguin-cmyk/legion/refs/heads/main/logo.png"
+local legion_logo = "https://raw.githubusercontent.com/elytra993/legion/refs/heads/main/logo.png"
 if not isfile("legion_logo.png") then 
 	writefile("legion_logo.png", game:HttpGet(legion_logo))
 end 
